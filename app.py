@@ -46,4 +46,3 @@ def results():
     prompt = f"Considere a consulta, {consulta},Reescreva as sentenças de resposta de uma forma alternativa, não apresente opções de reescrita, {resultado}"
     response = model2.generate_content(prompt)
     return jsonify({"mensagem": response.text})
-
